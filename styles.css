@@ -1,109 +1,94 @@
-:root {
-    /* PRIMARY */
-    --bright-orange: hsl(31, 77%, 52%);
-    --dark-cyan: hsl(184, 100%, 22%);
-    --very-dark-cyan: hsl(179, 100%, 13%);
-    /* NEUTRAL */
-    --transparent-white: hsla(0, 0%, 100%, 0.75);
-    --very-light-gray: hsl(0, 0%, 95%);
-
-    --border-radius: 10px;
-}
-
 body {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    background-color: var(--very-light-gray);
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  background-color: hsl(0, 0%, 95%);
 }
 
 .container {
-    width: 65%;
-    display: flex;
-    flex-direction: row;
-    margin: auto;
+  width: 65%;
+  display: flex;
+  flex-direction: row;
+  margin: auto;
 }
 
 /* ALL CARDS */
 .card {
-    padding: 35px;
+  padding: 35px;
 }
 
 h1 {
-    text-transform: uppercase;
-    font-family: "Big Shoulders Display";
-    font-weight: 700;
-    color: var(--very-light-gray);
+  text-transform: uppercase;
+  font-family: "Big Shoulders Display";
+  font-weight: 700;
+  color: hsl(0, 0%, 95%);
 }
 
 p,
 .btn {
-    font-family: "Lexend Deca";
-    font-weight: 400;    
-    font-size: 15px;
-    color: var(--transparent-white);
+  font-family: "Lexend Deca";
+  font-weight: 400;
+  font-size: 15px;
+  color: hsla(0, 0%, 100%, 0.75);
 }
 
 .btn {
-    margin-top: 50px;
-    background-color: var(--very-light-gray);
-    padding: 15px 20px;
-    border-radius: 40px;
-    border: 1px solid var(--very-light-gray);
+  margin-top: 50px;
+  background-color: hsl(0, 0%, 95%);
+  padding: 15px 20px;
+  border-radius: 40px;
+  border: 1px solid hsl(0, 0%, 95%);
 }
-
 .btn:hover {
-    cursor: pointer;
-    color: var(--very-light-gray) !important;
-    background-color: inherit;
-    border: 1px solid var(--very-light-gray);
+  cursor: pointer;
+  color: hsl(0, 0%, 95%) !important;
+  background-color: inherit;
+  border: 1px solid hsl(0, 0%, 95%);
 }
 
 /* INDIVIDUAL CARDS */
 #sedans {
-    background-color: var(--bright-orange);
-    border-top-left-radius: var(--border-radius);
-    border-bottom-left-radius: var(--border-radius);
+  background-color: hsl(31, 77%, 52%);
+  border-radius: 10px 0 0 10px;
 }
-#sedans > .btn {
-    color: var(--bright-orange);
+#sedans .btn {
+  color: hsl(31, 77%, 52%);
 }
 
 #suvs {
-    background-color: var(--dark-cyan);
+  background-color: hsl(184, 100%, 22%);
 }
-#suvs > .btn {
-    color: var(--dark-cyan);
+#suvs .btn {
+  color: hsl(184, 100%, 22%);
 }
 
 #luxury {
-    background-color: var(--very-dark-cyan);
-    border-top-right-radius: var(--border-radius);
-    border-bottom-right-radius: var(--border-radius);
+  background-color: hsl(179, 100%, 13%);
+  border-radius: 0 10px 10px 0;
 }
-#luxury > .btn {
-    color: var(--very-dark-cyan);
+#luxury .btn {
+  color: hsl(179, 100%, 13%);
 }
 
 @media (max-width: 425px) {
-    body {
-        margin: 100px 0px;
-    }
-    .container {
-        flex-direction: column;
-    }
-    #sedans {
-        border-bottom-left-radius: 0px;
-        border-top-right-radius: var(--border-radius);
-    }
-    #luxury {
-        border-top-right-radius: 0px;
-        border-bottom-left-radius: var(--border-radius);
-    }
-    .btn {
-        margin-top: 30px;
-    }
+  body {
+    margin: 100px 0px;
+  }
+  .container {
+    flex-direction: column;
+  }
+  #sedans {
+    border-radius: 10px 10px 0 0;
+  }
+  #luxury {
+    border-radius: 0 0 10px 10px;
+  }
+  .btn {
+    margin-top: 30px;
+  }
 }
+
+/*# sourceMappingURL=styles.css.map */

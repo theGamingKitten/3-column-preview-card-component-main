@@ -10,7 +10,8 @@ This is a solution to the [3-column preview card component challenge on Frontend
   - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
-  - [Continued development](#continued-development)
+  - [What I learned](#what-i-learned)
+  - [Useful resources](#useful-resources)
 - [Author](#author)
 
 ## Overview
@@ -40,10 +41,26 @@ Users should be able to:
 - Semantic HTML5 markup
 - CSS
 - Flexbox
+- [SASS](https://sass-lang.com/)
 
-### Continued development
+### What I learned
 
-Maybe next time I'll try to use something like SASS as this project's css could be better especially with all the nesting of classes for the individual styling of the buttons.
+First time using SASS, as I wanted to try something like this and thought the nesting for the individual cards is a great opportunity to do this.
+
+Used this mixin to save a lot of code to style the buttons:
+```css
+@mixin theme($theme: DarkGray) {
+    background-color: $theme;
+    .btn {
+        color: $theme;
+    }
+}
+```
+Will definitely try to use it more in future challenges
+
+### Useful resources
+
+- [SASS Guide](https://sass-lang.com/guide/) - Used the guide for SASS to make my first steps with it
 
 ## Author
 
