@@ -16,6 +16,7 @@ body {
     display: flex;
     align-items: center;
     background-color: $very-light-gray;
+    font-size: 15px;
 }
 
 .container {
@@ -27,21 +28,25 @@ body {
 
 /* ALL CARDS */
 .card {
-    padding: 35px;
+    padding: 40px;
 }
 
 h1 {
     text-transform: uppercase;
     font-family: "Big Shoulders Display";
     font-weight: 700;
+    font-size: 2.5rem;
     color: $very-light-gray;
+}
+
+p {
+    line-height: 1.5;
 }
 
 p,
 .btn {
     font-family: "Lexend Deca";
-    font-weight: 400;    
-    font-size: 15px;
+    font-weight: 400;        
     color: $transparent-white;
 }
 
@@ -49,6 +54,7 @@ p,
     margin-top: 50px;
     background-color: $very-light-gray;
     padding: 15px 20px;
+    font-size: 0.9rem;
     border-radius: 40px;
     border: 1px solid $very-light-gray;
     &:hover {

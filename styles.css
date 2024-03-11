@@ -6,6 +6,7 @@ body {
   display: flex;
   align-items: center;
   background-color: hsl(0, 0%, 95%);
+  font-size: 15px;
 }
 
 .container {
@@ -17,21 +18,25 @@ body {
 
 /* ALL CARDS */
 .card {
-  padding: 35px;
+  padding: 40px;
 }
 
 h1 {
   text-transform: uppercase;
   font-family: "Big Shoulders Display";
   font-weight: 700;
+  font-size: 2.5rem;
   color: hsl(0, 0%, 95%);
+}
+
+p {
+  line-height: 1.5;
 }
 
 p,
 .btn {
   font-family: "Lexend Deca";
   font-weight: 400;
-  font-size: 15px;
   color: hsla(0, 0%, 100%, 0.75);
 }
 
@@ -39,6 +44,7 @@ p,
   margin-top: 50px;
   background-color: hsl(0, 0%, 95%);
   padding: 15px 20px;
+  font-size: 0.9rem;
   border-radius: 40px;
   border: 1px solid hsl(0, 0%, 95%);
 }
